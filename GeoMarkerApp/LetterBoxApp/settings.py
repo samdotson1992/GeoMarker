@@ -27,7 +27,7 @@ with open('/home/samsam/GeoMarkerParent/private/secret_key.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['45.77.94.23']
 
 
 # Application definition
