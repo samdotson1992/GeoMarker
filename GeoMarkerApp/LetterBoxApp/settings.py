@@ -79,12 +79,15 @@ WSGI_APPLICATION = 'LetterBoxApp.wsgi.application'
 
 POSTGIS_VERSION = (1, 5, 3)
 
+with open('/home/samsam/GeoMarkerParent/private/dbpassword.txt') as f:
+    dbpassword = f.read().strip()
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME':'geomarker',
         'USER':'postgres',
-        'password': '******',
+        'password': dbpassword,
         'host': '127.0.0.1',
     }
 }
