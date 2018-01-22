@@ -80,8 +80,8 @@ POSTGIS_VERSION = (1, 5, 3)
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME':'letterbox',
-        'USER':'sam',
+        'NAME':'geomarker',
+        'USER':'postgres',
         'password': '******',
         'host': '127.0.0.1',
     }
