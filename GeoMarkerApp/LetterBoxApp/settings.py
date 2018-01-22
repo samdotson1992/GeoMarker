@@ -86,9 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME':'geomarker',
-        'USER':'postgres',
+        'USER':'samsam',
         'password': dbpassword,
-        'host': '127.0.0.1',
+        'host': 'localhost',
     }
 }
 
