@@ -125,6 +125,7 @@
 				success: function(data){
 					newMarker = new L.marker([lat, lon]).addTo(mymap)
 					newMarker.bindPopup('<h1>'+text+ '<h1>')
+					mymap.closePopup();
  
             },
             error: function(){
